@@ -1,8 +1,8 @@
 # Basic setup:
  ISPIN = 2
  LSORBIT = .FALSE.
- ISTART = 0
- ICHARG = 2 
+ ISTART = 1
+ ICHARG = 1 
  # not using Hubbard U
 
 # Accuracy controls:
@@ -22,13 +22,14 @@
  SIGMA = 0.05
  # NBANDS - using default
 
-# Relaxation control:
- IBRION = 2    # Conjugate gradients
- NSW = 100
+# OP GEOM
+ IBRION = -1    # Conjugate gradients
+ NSW = 0
  ISIF = 2      # Ions
  EDIFFG = -0.02
- MAGMOM = 24*2.0 24*2.0 
- LREAL = .TRUE. 
+ MAGMOM = 5*2.0 4*-2.0 9*0.0 
+ LREAL = Auto
+ NUPDOWN = 1 
 
 # Properties:
  LCHARG = .TRUE.
